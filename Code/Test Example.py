@@ -19,7 +19,7 @@ assistant = AssistantAgent(name="assistant"
                            , llm_config={"config_list": config_list})
 
 user_proxy = UserProxyAgent("user_proxy", code_execution_config=
-{"work_dir": r"C:\Users\mehul\Documents\Projects - GIT\Agents\Proj1\Code",
+{"work_dir": "Code",
  "use_docker": False}
                             )
 # IMPORTANT: set to True to run code in docker, recommended

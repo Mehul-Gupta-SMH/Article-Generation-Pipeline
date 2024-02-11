@@ -24,7 +24,7 @@ groupchat = GroupChat(agents=[Emp_Editor, Boss_Editor], messages=[], max_round=4
 manager = GroupChatManager(groupchat=groupchat, llm_config={"config_list": config_list})
 
 user_proxy = UserProxyAgent(
-    "user_proxy", code_execution_config={"work_dir": r"C:\Users\mehul\Documents\Projects - GIT\Agents\Proj1\Code",
+    "user_proxy", code_execution_config={"work_dir": "Code",
                                          "use_docker": False}
 )
 
