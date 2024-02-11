@@ -1,3 +1,6 @@
+
+**_Its all in the process of development as of yet_**
+
 AI-powered News Article Generation with Interactive Chat Interface
 This repository showcases a project that leverages powerful language models (LLMs) to automate parts of the news article generation process. It features an interactive chat interface where two AI agents play the roles of editors, collaborating to create a concise and engaging summary of a given topic.
 
