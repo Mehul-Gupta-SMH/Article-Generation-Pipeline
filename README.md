@@ -21,7 +21,7 @@
 - **Clone the repository**: git clone https://github.com/Mehul-Gupta-SMH/Article-Generation-Pipeline.git
 - **Install dependencies**: Refer to the requirements.txt file for instructions.
 - **Set API keys**: Replace the placeholder '' with your OpenAI API key in the config_list variable.
-- **Run the script**: Execute python main.py to start the interactive chat interface.
+- **Run the script**: Execute python Summary.py to start the interactive chat interface.
 
 
 
