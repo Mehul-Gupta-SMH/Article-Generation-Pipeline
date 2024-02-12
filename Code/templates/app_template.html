@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Generator</title>
+    <style>
+        /* CSS styles go here */
+        /* Hyper-stylized design */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            outline: none;
+            font-size: 18px;
+            transition: border-color 0.3s ease;
+        }
+        input[type="text"]:focus {
+            border-color: #00ccff;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #article-content {
+            margin-top: 30px;
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            font-size: 16px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 36px;
+            color: #007bff;
+        }
+        /* Loader styles */
+        .loader {
+            border: 8px solid #f3f3f3; /* Light grey */
+            border-top: 8px solid #3498db; /* Blue */
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+            display: none;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Article Generator</h1>
+    <div>
+        <input type="text" id="api-key" placeholder="Enter your API key">
+    </div>
+    <div>
+        <input type="text" id="topic" placeholder="Enter topic for article">
+        <button id="submit-btn">Generate Article</button>
+    </div>
+    <div id="article-content"></div>
+    <!-- Loader -->
+    <div class="loader" id="loader"></div>
+</div>
+<script>
+    // JavaScript code goes here
+    document.getElementById('submit-btn').addEventListener('click', function() {
+        const apiKey = document.getElementById('api-key').value;
+        const topic = document.getElementById('topic').value;
+
+        // Show loader
+        document.getElementById('loader').style.display = 'block';
+
+        // Make AJAX request to Flask app to generate article content
+        fetch(`/generate-article?api_key=${apiKey}&topic=${topic}`)
+            .then(response => response.json())
+            .then(data => {
+                // Hide loader
+                document.getElementById('loader').style.display = 'none';
+
+                // Populate article content
+                document.getElementById('article-content').innerText = data.content;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                // Hide loader on error
+                document.getElementById('loader').style.display = 'none';
+            });
+    });
+</script>
+</body>
+</html>

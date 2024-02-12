@@ -2,7 +2,7 @@
 <span style="font-size:25px;">**_Agentic Article Generator_**</span>
 
 - AI-powered News Article Generation with Interactive Chat Interface (TBD)
-- This repository showcases a project that leverages powerful language models (LLMs) to automate parts of the news article generation process. 
+- This repository showcases a project that leverages powerful language models (LLMs) to automate parts of the news article generation process.
 - It features two AI agents play the roles of editors, collaborating to create a concise and engaging summary of a given topic.
 
 **_Key Features_**:
