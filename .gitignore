@@ -1,2 +1,4 @@
 Code/.cache
 venv
+pyvenv.cfg
+.idea
