@@ -55,3 +55,7 @@ Feel free to modify the following aspects:
 
 This project is for demonstration purposes only and does not guarantee factual accuracy or journalistic integrity. Always review and edit AI-generated content before publishing.
 
+
+
+**_Sample Article Example_**
+https://github.com/Mehul-Gupta-SMH/Article-Generation-Pipeline/blob/master/Code/results_samples/Article%20Generator%20-%20Exploring%20the%20Difference%20Between%20Things%20and%20People.html
