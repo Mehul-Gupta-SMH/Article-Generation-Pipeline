@@ -55,6 +55,8 @@ Feel free to modify the following aspects:
 
 This project is for demonstration purposes only and does not guarantee factual accuracy or journalistic integrity. Always review and edit AI-generated content before publishing.
 
+_**App Face**_
+Code/assets/App Face.png
 
 
 **_Sample Article Example_**
