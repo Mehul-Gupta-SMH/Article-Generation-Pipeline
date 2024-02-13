@@ -89,9 +89,9 @@
         <input type="text" id="topic" placeholder="Enter topic for article">
         <button id="submit-btn">Generate Article</button>
     </div>
-    <div id="article-content"></div>
+    <div id="article-content"> <div class="loader" id="loader"></div> </div>
     <!-- Loader -->
-    <div class="loader" id="loader"></div>
+
 </div>
 <script>
     // JavaScript code goes here
@@ -110,7 +110,7 @@
                 document.getElementById('loader').style.display = 'none';
 
                 // Populate article content
-                document.getElementById('article-content').innerText = data.content;
+                document.getElementById('article-content').innerHTML = data.content;
             })
             .catch(error => {
                 console.error('Error:', error);
