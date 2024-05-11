@@ -60,4 +60,24 @@ Code/assets/App Face.png
 
 
 **_Sample Article Example_**
-https://github.com/Mehul-Gupta-SMH/Article-Generation-Pipeline/blob/master/Code/results_samples/Article%20Generator%20-%20Exploring%20the%20Difference%20Between%20Things%20and%20People.html
+<svg fill="none" viewBox="0 0 600 300" width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+<foreignObject width="100%" height="100%">
+<div xmlns="http://www.w3.org/1999/xhtml">
+<style>
+.container {
+display: flex;
+width: 100%;
+height: 300px;
+background-color: black;
+color: white;
+}
+</style>
+
+      <div class="container">
+        https://github.com/Mehul-Gupta-SMH/Article-Generation-Pipeline/blob/master/Code/results_samples/Article%20Generator%20-%20Exploring%20the%20Difference%20Between%20Things%20and%20People.html
+      </div>
+    </div>
+  </foreignObject>
+</svg>
+
+
